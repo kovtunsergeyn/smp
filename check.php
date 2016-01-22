@@ -4,7 +4,7 @@
 
 //подключаемся к бд
 
-include "dbconnect.php";
+include_once "dbconnect.php";
 
 if (isset($_COOKIE['id']) and isset($_COOKIE['hash']))
 
