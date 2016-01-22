@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>registration_form</title>
+    <title>Добро пожаловать!</title>
 
     <script type="text/javascript" src="js/jquery.js"></script
     <script type="text/javascript" src="js/uikit.js"></script>
