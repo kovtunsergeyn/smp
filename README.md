@@ -1,2 +1,4 @@
 # smp
-smp
+Simple
+Magic
+Power
