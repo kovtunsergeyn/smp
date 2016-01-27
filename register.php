@@ -115,33 +115,26 @@ if (isset($_POST['submit_auth'])) {
 
     {
         # Генерируем случайное число и шифруем его
-        $hash = md5(generateCode(10));
+        $hash = md5(generateCode(10));  //можно заменить на md5(rand(10,10)); нафиг там функция generateCode() не понял
 
         if(!@$_POST['not_attach_ip'])
 
         {
             # Если пользователя выбрал привязку к IP
-
             # Переводим IP в строку
-
             $insip = ", user_ip=INET_ATON('".$_SERVER['REMOTE_ADDR']."')";
-
         }
 
         # Записываем в БД новый хеш авторизации и IP
-
         mysql_query("UPDATE users SET user_hash='".$hash."' ".$insip." WHERE user_id='".$result[0]."'");
 
         # Ставим куки
         setcookie("id", $result[0], time()+60*60*24*30);
-
         setcookie("hash", $hash, time()+60*60*24*30);
 
         # Переадресовываем браузер на страницу проверки нашего скрипта
-
         header("Location: check.php");
         exit();
-
     }
     else {
         $message = 'Вы ввели не правильный логин/пароль!';
