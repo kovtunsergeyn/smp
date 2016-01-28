@@ -1,49 +1,61 @@
-<?
-
+<?php
 // Скрипт проверки
 
 //подключаемся к бд
+$dsn = 'mysql:dbname=db02;host=localhost';
+$db_user= 'db02user';
+$db_password = '1234';
 
-include_once "dbconnect.php";
+try {
+    $pdo = new PDO($dsn, $db_user, $db_password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo->exec('SET NAMES "utf8"');
+} catch (PDOException $connect_error) {
+    $error = 'Не удалось подключится с серверу баз данных!' .$connect_error->getMessage();
+    include 'output.html.php';
+    exit();
+}
 
-if (isset($_COOKIE['id']) and isset($_COOKIE['hash']))
+if (isset($_COOKIE['id']) and isset($_COOKIE['hash'])) {
 
-{
+    try {
+        $SQL = 'SELECT user_hash from users WHERE user_id=:user_id';
+        $s = $pdo->prepare($SQL);
+        $s->bindValue(':user_id', $_COOKIE['id']);
+        $s->execute();
+    } catch (PDOexeption $connect_error) {
+        $error = 'Не удалось выполнить запрос' . $connect_error->getMessage();
+        exit();
+    }
 
-    $query = mysql_query("SELECT *,INET_NTOA(user_ip) FROM users WHERE user_id = '".intval($_COOKIE['id'])."' LIMIT 1");
+    $result = $s->fetch();
+    //$result[0] - хэш пользователя с идентификаторром который записан в куках
 
-    $userdata = mysql_fetch_assoc($query);
-
-
-    if(($userdata['user_hash'] !== $_COOKIE['hash']) or ($userdata['user_id'] !== $_COOKIE['id'])
-        or (($userdata['user_ip'] !== $_SERVER['REMOTE_ADDR'])  and ($userdata['user_ip'] !== "0")))
+    if($_COOKIE['hash'] != $result[0])
 
     {
-
         setcookie("id", "", time() - 3600*24*30*12, "/");
 
         setcookie("hash", "", time() - 3600*24*30*12, "/");
 
-        print "Хм, что-то не получилось";
-
+        $message = 'Что-то пошло не так';
+        header('Location:register.php');
     }
-
     else
-
     {
-
-        print "Привет, ".$userdata['user_login'].". Всё работает!";
-
+        $error = "Привет! Все работает!";
     }
-
 }
 
 else
 
 {
-
-    print "Включите куки";
-
+    $message = 'Включите куки';
+    header('Location:register.php');
 }
 
-include "registration_page.html.php";
+include "search_page.html.php";
+
+if (isset($_POST['exit'])) {
+    header('Location: exit.php');
+}
