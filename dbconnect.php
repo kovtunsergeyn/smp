@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: skovtun
- * Date: 22.01.16
- * Time: 18:56
- * To change this template use File | Settings | File Templates.
- */
 //Подключение к базе данных
 
 $dsn = 'mysql:dbname=db02;host=localhost';
