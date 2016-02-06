@@ -59,9 +59,9 @@
 
         <div class="main">
             <h2>Search</h2>
+            <input type="button" name="patientAdd" id="patientAdd" class="uk-button uk-button-primary uk-align-medium-right" value="Create a patient"/>
         </div>
 
     </div>
-</div>
 </body>
 </html>

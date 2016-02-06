@@ -2,7 +2,7 @@
 //Подключение к базе данных
 
 $dsn = 'mysql:dbname=db02;host=localhost';
-$db_user= 'db02user';
+$db_user= 'dbuser';
 $db_password = '1234';
 
 try {

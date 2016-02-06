@@ -3,7 +3,7 @@
 
 //подключаемся к бд
 $dsn = 'mysql:dbname=db02;host=localhost';
-$db_user= 'db02user';
+$db_user= 'dbuser';
 $db_password = '1234';
 
 try {
@@ -40,6 +40,7 @@ if (isset($_COOKIE['id']) and isset($_COOKIE['hash'])) {
 
         $message = 'Что-то пошло не так';
         header('Location:register.php');
+        include 'register.php';
     }
     else
     {

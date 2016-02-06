@@ -1,7 +1,6 @@
 <?php
-
 // Страница регситрации нового пользователя
-
+//netbeans test
 //подключаемся к бд
 include_once "dbconnect.php";
 
@@ -29,7 +28,7 @@ if (isset($_POST['submit'])) {
         $s->execute();
     } catch (PDOException $connect_error) {
         $error = 'Не удалось выполнить запрос' . $connect_error->getMessage();
-        include "output.html.php";
+        //include "output.html.php";
         exit();
     }
 
@@ -58,15 +57,15 @@ if (isset($_POST['submit'])) {
         }
         catch (PDOException $connect_error) {
             $error = 'Не удалось зарегегстрировать пользователя' . $connect_error->getMessage();
-            include "output.html.php";
+            //include "output.html.php";
             exit();
         }
 
         $user_register = 'Пользователь зарегестрирован!';
 
-    } else {
-        include "output.html.php";
-    }
+    } //else {
+        //include "output.html.php";
+    //}
 }
 
 //!!!аутентификация пользователя!!!
@@ -89,7 +88,6 @@ function generateCode($length=6) {
 
 }
 
-
 if (isset($_POST['submit_auth'])) {
 
     # Вытаскиваем из БД запись, у которой логин равняеться введенному
@@ -101,7 +99,7 @@ if (isset($_POST['submit_auth'])) {
         $s->execute();
     } catch (PDOException $connect_error) {
         $error = 'Не удалось выполнить запрос' . $connect_error->getMessage();
-        include "output.heml.php";
+        //include "output.heml.php";
         exit();
     }
     $result = $s->fetch();
@@ -117,16 +115,18 @@ if (isset($_POST['submit_auth'])) {
         # Генерируем случайное число и шифруем его
         $hash = md5(generateCode(10));  //можно заменить на md5(rand(10,10)); нафиг там функция generateCode() не понял
 
-        if(!@$_POST['not_attach_ip'])
-
-        {
-            # Если пользователя выбрал привязку к IP
-            # Переводим IP в строку
-            $insip = ", user_ip=INET_ATON('".$_SERVER['REMOTE_ADDR']."')";
-        }
-
-        # Записываем в БД новый хеш авторизации и IP
-        mysql_query("UPDATE users SET user_hash='".$hash."' ".$insip." WHERE user_id='".$result[0]."'");
+        # Записываем в БД новый хеш авторизации
+    try {
+        $SQL = 'UPDATE users SET user_hash=:user_hash WHERE user_id=:user_id';
+        $s = $pdo->prepare($SQL);
+        $s->bindValue(':user_hash', $hash);
+        $s->bindValue(':user_id', $result[0]);
+        $s->execute();
+    } catch (PDOException $connect_error) {
+        $error = 'Не удалось выполнить запрос' . $connect_error->getMessage();
+        //include "output.heml.php";
+        exit();
+    }
 
         # Ставим куки
         setcookie("id", $result[0], time()+60*60*24*30);
@@ -138,8 +138,32 @@ if (isset($_POST['submit_auth'])) {
     }
     else {
         $message = 'Вы ввели не правильный логин/пароль!';
-        include "output.html.php";
+        //include "output.html.php";
     }
 }
 
+//если есть хэш отличный от 0 реиректит на страницу поиска (стратовая страница)
+function redirect() {
+
+    include 'dbconnect.php';
+
+    try {
+        $SQL = 'SELECT user_hash from users WHERE user_id=:user_id';
+        $s = $pdo->prepare($SQL);
+        $s->bindValue(':user_id', $_COOKIE['id']);
+        $s->execute();
+    } catch (PDOexeption $connect_error) {
+        $error = 'Не удалось выполнить запрос' . $connect_error->getMessage();
+        exit();
+    }
+
+    $result = $s->fetch();
+    //$result[0] - хэш пользователя с идентификаторром который записан в куках
+
+    if ($result[0] != 0) {
+        header('Location:check.php');
+    }
+}
+
+redirect();
 include "registration_page.html.php";
