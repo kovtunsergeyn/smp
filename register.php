@@ -1,8 +1,11 @@
 <?php
 // Страница регситрации нового пользователя
-//netbeans test
+
 //подключаемся к бд
-include_once "dbconnect.php";
+include_once $_SERVER["DOCUMENT_ROOT"] . "/smp/" . "dbconnect.php";
+
+//чтобы не ругался при первом входе при отсутствии в куках id
+setcookie("id", 0);
 
 if (isset($_POST['submit'])) {
 
@@ -68,7 +71,7 @@ if (isset($_POST['submit'])) {
     //}
 }
 
-//!!!аутентификация пользователя!!!
+//аутентификация пользователя
 
 //Функция для генерации случайной строки
 

@@ -26,6 +26,7 @@
                 <nav>
                     <a href="#" class="icon-arrow-left" data-info="previous">Previous</a>
                     <input type="button" name="modbutton" id="modbutoon" value="Exit" data-uk-modal="{target:'#mod'}" class="uk-button uk-button-link" style="margin-top: 3%;"/>
+                    <a href="admin_users/index.php">User admin</a>
 
                     <div class="uk-modal" id="mod">
                         <div class="uk-modal-dialog">
