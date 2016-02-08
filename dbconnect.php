@@ -11,6 +11,6 @@ try {
     $pdo->exec('SET NAMES "utf8"');
 } catch (PDOException $connect_error) {
     $error = 'Не удалось подключится с серверу баз данных!' .$connect_error->getMessage();
-    include 'output.html.php';
+    include 'admin_users.html.php';
     exit();
 }

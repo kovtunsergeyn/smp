@@ -35,9 +35,8 @@ if (isset($_POST['login_change'])) {
     $log_succes = 'Логин пользователя успешно изменен!';
 }
 
-include $_SERVER["DOCUMENT_ROOT"] . "/smp/" . "/admin_users/" . "output.html.php";
+include $_SERVER["DOCUMENT_ROOT"] . "/smp/" . "/admin_users/" . "admin_users.html.php";
 
 if (isset($_POST['exit'])) {
-    //header('Location: exit.php');
-    theEnd();
+    header('Location: exit.php');
 }

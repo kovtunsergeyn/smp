@@ -31,7 +31,6 @@ if (isset($_POST['submit'])) {
         $s->execute();
     } catch (PDOException $connect_error) {
         $error = 'Не удалось выполнить запрос' . $connect_error->getMessage();
-        //include "output.html.php";
         exit();
     }
 
@@ -60,14 +59,13 @@ if (isset($_POST['submit'])) {
         }
         catch (PDOException $connect_error) {
             $error = 'Не удалось зарегегстрировать пользователя' . $connect_error->getMessage();
-            //include "output.html.php";
             exit();
         }
 
         $user_register = 'Пользователь зарегестрирован!';
 
     } //else {
-        //include "output.html.php";
+        //include "admin_users.html.php";
     //}
 }
 
@@ -141,7 +139,6 @@ if (isset($_POST['submit_auth'])) {
     }
     else {
         $message = 'Вы ввели не правильный логин/пароль!';
-        //include "output.html.php";
     }
 }
 

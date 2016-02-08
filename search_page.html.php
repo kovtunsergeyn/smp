@@ -15,6 +15,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/uikit.js"></script>
     <link rel="stylesheet" type="text/css" href="css/uikit (1).css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -26,7 +27,6 @@
                 <nav>
                     <a href="#" class="icon-arrow-left" data-info="previous">Previous</a>
                     <input type="button" name="modbutton" id="modbutoon" value="Exit" data-uk-modal="{target:'#mod'}" class="uk-button uk-button-link" style="margin-top: 3%;"/>
-                    <a href="admin_users/index.php">User admin</a>
 
                     <div class="uk-modal" id="mod">
                         <div class="uk-modal-dialog">
@@ -48,13 +48,13 @@
             <a href="#" class="icon-archive">Archive</a>
         </li>
         <li class="cbp-vicurrent">
-            <a href="#" class="icon-search">Search</a>
+            <a href="search_page.html.php" class="icon-search">Search</a>
         </li>
         <li>
             <a href="#" class="icon-pencil">Pencil</a>
         </li>
         <li>
-            <a href="#" class="icon-download">Download</a>
+            <a href="admin_users/index.php" class="icon-download">Download</a>
         </li>
     </ul>
 

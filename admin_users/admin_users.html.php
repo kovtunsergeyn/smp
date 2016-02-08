@@ -46,18 +46,18 @@
                 <a href="#" class="icon-archive">Archive</a>
             </li>
             <li>
-                <a href="#" class="icon-search">Search</a>
+                <a href="../check.php" class="icon-search">Search</a>
             </li>
             <li>
                 <a href="#" class="icon-pencil">Pencil</a>
             </li>
             <li class="cbp-vicurrent">
-                <a href="#" class="icon-download">Download</a>
+                <a href="index.php" class="icon-download">Download</a>
             </li>
         </ul>
         `
         <div class="main">
-            <h1>Список пользователей</h1>
+            <h2>Users list</h2>
 
             <?php if (isset($log_succes)){
                 echo  '<div style="margin-top: 2%; margin-left: 40%" class="uk-alert-success uk-text-center uk-width-1-5
@@ -67,17 +67,17 @@
 
             <?php foreach ($users as $user): ?>
                 <form action="index.php" method="POST" class="uk-form uk-panel-box uk-panel">
-                    <i>Логин:</i> <?php echo $user['login']?>
-                    <i>Пароль:</i> <?php echo $user['password']?>
+                    <i>Login:</i> <?php echo $user['login']?>
+                    <i>Password:</i> <?php echo $user['password']?>
                     <i>ID:</i> <?php echo $user['id'] ?><br/><br/>
 
                     <input type="hidden" id="user_id" name="user_id" value="<?php echo $user['id']; ?>">
 
-                    <input type="text" placeholder="Изменить логин" id="login_change" name="login_change">
-                    <button type="submit" name="login" id="login" class="uk-button uk-button-primary uk-width-1-5">Изменить логин</button><br/><br/>
+                    <input type="text" placeholder="Change login" id="login_change" name="login_change">
+                    <button type="submit" name="login" id="login" class="uk-button uk-button-primary uk-width-1-5">Change login</button><br/><br/>
 
-                    <input type="text" placeholder="Изменить пароль" id="password_change" name="password_change">
-                    <button type="submit" name="password" id="password" class="uk-button uk-button-primary uk-width-1-5">Изменить пароль</button><br/>
+                    <input type="text" placeholder="Change password" id="password_change" name="password_change">
+                    <button type="submit" name="password" id="password" class="uk-button uk-button-primary uk-width-1-5">Change password</button><br/>
                 </form><br/>
             <?php endforeach; ?>
 
