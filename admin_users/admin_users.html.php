@@ -59,11 +59,16 @@
         <div class="main">
             <h2>Users list</h2>
 
-            <?php if (isset($log_succes)){
-                echo  '<div style="margin-top: 2%; margin-left: 40%" class="uk-alert-success uk-text-center uk-width-1-5
-            uk-animation-slide-top">' . $log_succes .
-                    '</div>';
+            <?php if (isset($pchange)) {
+                echo '<div style="margin-top: 2%; margin-left: 40%;" class="uk-alert-success uk-text-center uk-width-1-5
+            uk-animation-slide-top">' . $pchange . '</div>' . '<br/>';
             } ?>
+
+            <?php if (isset($log_error)) {
+                echo '<div style="margin-top: 2%; margin-left: 40%;" class="uk-alert-danger uk-text-center uk-width-1-5
+            uk-animation-slide-top">' . $log_error . '</div>' . '<br/>';
+            } ?>
+
 
             <?php foreach ($users as $user): ?>
                 <form action="index.php" method="POST" class="uk-form uk-panel-box uk-panel">
@@ -80,8 +85,6 @@
                     <button type="submit" name="password" id="password" class="uk-button uk-button-primary uk-width-1-5">Change password</button><br/>
                 </form><br/>
             <?php endforeach; ?>
-
-
 
         </div>
 

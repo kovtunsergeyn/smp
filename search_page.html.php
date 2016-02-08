@@ -48,7 +48,7 @@
             <a href="#" class="icon-archive">Archive</a>
         </li>
         <li class="cbp-vicurrent">
-            <a href="search_page.html.php" class="icon-search">Search</a>
+            <a href="check.php" class="icon-search">Search</a>
         </li>
         <li>
             <a href="#" class="icon-pencil">Pencil</a>

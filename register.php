@@ -64,9 +64,7 @@ if (isset($_POST['submit'])) {
 
         $user_register = 'Пользователь зарегестрирован!';
 
-    } //else {
-        //include "admin_users.html.php";
-    //}
+    }
 }
 
 //аутентификация пользователя

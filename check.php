@@ -46,6 +46,5 @@ include "search_page.html.php";
 
 //выход
 if (isset($_POST['exit'])) {
-    //header('Location: exit.php');
     theEnd();
 }
