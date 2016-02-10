@@ -17,9 +17,10 @@ function theEnd() {
     $error = 'Не удалось выполнить запрос' . $connect_error->getMessage();
     exit();
 }
+
 setcookie("id", "", time() - 3600*24*30*12, "/");
 setcookie("hash", "", time() - 3600*24*30*12, "/");
 
-header('Location:register.php');
+header('Location:'. "/smp/" . 'register.php');
 include "registration_page.html.php";
 }

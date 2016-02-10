@@ -60,14 +60,14 @@ if (isset($_POST['login'])) {
             $change_login = 'Логин успешно изменен!';
 
             //обновить страницу после апдейта таблицы
-            Header('Location: '.$_SERVER['PHP_SELF']);
+            header('Location: '.$_SERVER['PHP_SELF']);
         }
     }
 
 //изменяем пароль
 if (isset($_POST['password'])) {
 
-    //шифрую введенный пароль двойным мд5 шифрованием
+    //шифруем введенный пароль двойным мд5 шифрованием
     $pass = md5(md5($_POST['password_change']));
 
     try {
@@ -88,9 +88,11 @@ if (isset($_POST['password'])) {
     Header('Location: '.$_SERVER['PHP_SELF']);
 }
 
-include $_SERVER["DOCUMENT_ROOT"] . "/smp/" . "/admin_users/" . "admin_users.html.php";
+
 
 //выход
 if (isset($_POST['exit'])) {
     theEnd();
 }
+
+include $_SERVER["DOCUMENT_ROOT"] . "/smp/" . "/admin_users/" . "admin_users.html.php";

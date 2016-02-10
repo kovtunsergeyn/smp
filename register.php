@@ -4,9 +4,6 @@
 //подключаемся к бд
 include_once $_SERVER["DOCUMENT_ROOT"] . "/smp/" . "dbconnect.php";
 
-//чтобы не ругался при первом входе при отсутствии в куках id
-setcookie("id", 0);
-
 if (isset($_POST['submit'])) {
 
     $err = array();

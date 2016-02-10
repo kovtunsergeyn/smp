@@ -53,13 +53,13 @@
                 <a href="#" class="icon-archive">Archive</a>
             </li>
             <li>
-                <a href="../check.php" class="icon-search">Search</a>
+                <a title="search" href="../check.php" class="icon-search">Search</a>
             </li>
             <li>
                 <a href="#" class="icon-pencil">Pencil</a>
             </li>
             <li class="cbp-vicurrent">
-                <a href="index.php" class="icon-download">Download</a>
+                <a title="user administration" href="index.php" class="icon-download">Administration</a>
             </li>
         </ul>
 
@@ -110,7 +110,7 @@
                     <?php endforeach; ?>
                 </li>
 
-                <li>в разработке </li>
+                <li>список авторизованных пользователей, с возможностью сбросить авторизацию и их общее количество</li>
                 <li>еще не придумал</li>
             </ul>
 

@@ -48,13 +48,13 @@
             <a href="#" class="icon-archive">Archive</a>
         </li>
         <li class="cbp-vicurrent">
-            <a href="check.php" class="icon-search">Search</a>
+            <a title="search" href="check.php" class="icon-search">Search</a>
         </li>
         <li>
             <a href="#" class="icon-pencil">Pencil</a>
         </li>
         <li>
-            <a href="admin_users/index.php" class="icon-download">Download</a>
+            <a title="user administration" href="admin_users/index.php" class="icon-download">Administration</a>
         </li>
     </ul>
 
