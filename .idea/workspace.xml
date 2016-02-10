@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99bad392-5a4c-4296-a41b-0a5b36a433ed" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Visual Studio Theme.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/settings.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/команды" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_users/admin_users.html.php" afterPath="$PROJECT_DIR$/admin_users/admin_users.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_users/index.php" afterPath="$PROJECT_DIR$/admin_users/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration_page.html.php" afterPath="$PROJECT_DIR$/registration_page.html.php" />
     </list>
     <ignored path="smp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,13 +35,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="26" />
-              <folding>
-                <marker date="1454927962877" expanded="true" signature="701:762" placeholder="SELECT COUNT... users" />
-                <marker date="1454927962877" expanded="true" signature="1492:1566" placeholder="INSERT INTO users... " />
-                <marker date="1454927962877" expanded="true" signature="2476:2545" placeholder="SELECT user_... users" />
-                <marker date="1454927962877" expanded="true" signature="3299:3359" placeholder="UPDATE users... " />
-                <marker date="1454927962877" expanded="true" signature="4197:4247" placeholder="SELECT user_... users" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,19 +43,13 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin_users/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
+            <state vertical-scroll-proportion="-14.666667">
+              <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
               <folding>
-                <marker date="1454945173268" expanded="true" signature="265:317" placeholder="SELECT user_... users" />
-                <marker date="1454945173268" expanded="true" signature="265:319" placeholder="SELECT user_... users" />
-                <marker date="1454945173268" expanded="true" signature="885:892" placeholder="SELECT from users... " />
-                <marker date="1454945173268" expanded="true" signature="885:931" placeholder="SELECT user_... users" />
-                <marker date="1454945173268" expanded="true" signature="885:937" placeholder="SELECT user_... users" />
-                <marker date="1454945173268" expanded="true" signature="885:939" placeholder="SELECT user_... users" />
-                <marker date="1454945173268" expanded="true" signature="1497:1554" placeholder="UPDATE users... " />
-                <marker date="1454945173268" expanded="true" signature="2148:2180" placeholder="UPDATE users... " />
-                <marker date="1454945173268" expanded="true" signature="2148:2204" placeholder="UPDATE users... " />
-                <marker date="1454945173268" expanded="true" signature="2148:2211" placeholder="UPDATE users... " />
+                <marker date="1455113847669" expanded="true" signature="265:317" placeholder="SELECT user_... users" />
+                <marker date="1455113847669" expanded="true" signature="885:937" placeholder="SELECT user_... users" />
+                <marker date="1455113847669" expanded="true" signature="1497:1554" placeholder="UPDATE users... " />
+                <marker date="1455113847669" expanded="true" signature="2313:2376" placeholder="UPDATE users... " />
               </folding>
             </state>
           </provider>
@@ -64,61 +58,12 @@
       <file leaf-file-name="admin_users.html.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin_users/admin_users.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42090786">
-              <caret line="68" column="72" selection-start-line="68" selection-start-column="72" selection-end-line="68" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.82377625">
+              <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
               <folding>
-                <marker date="1454944704850" expanded="true" signature="2674:2707" placeholder="..." />
-                <marker date="1454944704850" expanded="true" signature="2927:2960" placeholder="..." />
-                <marker date="1454944704850" expanded="true" signature="3245:3297" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding>
-                <marker date="1454927513163" expanded="true" signature="268:319" placeholder="UPDATE users... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_page.html.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search_page.html.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="176" selection-start-line="28" selection-start-column="176" selection-end-line="28" selection-end-column="176" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="check.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/check.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-              <folding>
-                <marker date="1454927659516" expanded="true" signature="181:231" placeholder="SELECT user_... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration_page.html.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/registration_page.html.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="112" column="49" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
-              <folding>
-                <marker date="1454926795272" expanded="true" signature="7650:7682" placeholder="..." />
-                <marker date="1454926795272" expanded="true" signature="7945:7977" placeholder="..." />
-                <marker date="1454926795272" expanded="true" signature="8217:8249" placeholder="..." />
-                <marker date="1454926795272" expanded="true" signature="8466:8498" placeholder="..." />
+                <marker date="1455116008743" expanded="true" signature="3318:3351" placeholder="..." />
+                <marker date="1455116008743" expanded="true" signature="3611:3644" placeholder="..." />
+                <marker date="1455116008743" expanded="true" signature="3906:3939" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -154,13 +99,13 @@
         <option value="$PROJECT_DIR$/admin_users/output.html.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/default.css" />
-        <option value="$PROJECT_DIR$/registration_page.html.php" />
         <option value="$PROJECT_DIR$/exit.php" />
         <option value="$PROJECT_DIR$/check.php" />
         <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/search_page.html.php" />
-        <option value="$PROJECT_DIR$/admin_users/admin_users.html.php" />
+        <option value="$PROJECT_DIR$/registration_page.html.php" />
         <option value="$PROJECT_DIR$/admin_users/index.php" />
+        <option value="$PROJECT_DIR$/admin_users/admin_users.html.php" />
       </list>
     </option>
   </component>
@@ -174,10 +119,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="25" />
-    <option name="width" value="1448" />
-    <option name="height" value="879" />
+    <option name="y" value="28" />
+    <option name="width" value="1440" />
+    <option name="height" value="872" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -277,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,6 +255,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -404,28 +348,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="25" width="1448" height="879" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="28" width="1440" height="872" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18194444" sideWeight="0.67047817" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18194444" sideWeight="0.67047817" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -454,9 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1454927659516" expanded="true" signature="181:231" placeholder="SELECT user_... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -464,12 +405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454926795272" expanded="true" signature="7650:7682" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="7945:7977" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8217:8249" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8466:8498" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -478,9 +413,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding>
-            <marker date="1454944704850" expanded="true" signature="2674:2707" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="2927:2960" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="3245:3297" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3318:3351" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3611:3644" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3906:3939" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -489,13 +424,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454927962877" expanded="true" signature="701:762" placeholder="SELECT COUNT... users" />
-            <marker date="1454927962877" expanded="true" signature="1492:1566" placeholder="INSERT INTO users... " />
-            <marker date="1454927962877" expanded="true" signature="2476:2545" placeholder="SELECT user_... users" />
-            <marker date="1454927962877" expanded="true" signature="3299:3359" placeholder="UPDATE users... " />
-            <marker date="1454927962877" expanded="true" signature="4197:4247" placeholder="SELECT user_... users" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -510,9 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1454927659516" expanded="true" signature="181:231" placeholder="SELECT user_... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -520,12 +446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="73" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
-          <folding>
-            <marker date="1454926795272" expanded="true" signature="7650:7682" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="7945:7977" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8217:8249" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8466:8498" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -534,9 +454,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding>
-            <marker date="1454944704850" expanded="true" signature="2674:2707" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="2927:2960" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="3245:3297" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3318:3351" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3611:3644" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3906:3939" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -545,13 +465,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454927962877" expanded="true" signature="701:762" placeholder="SELECT COUNT... users" />
-            <marker date="1454927962877" expanded="true" signature="1492:1566" placeholder="INSERT INTO users... " />
-            <marker date="1454927962877" expanded="true" signature="2476:2545" placeholder="SELECT user_... users" />
-            <marker date="1454927962877" expanded="true" signature="3299:3359" placeholder="UPDATE users... " />
-            <marker date="1454927962877" expanded="true" signature="4197:4247" placeholder="SELECT user_... users" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -566,13 +480,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454927962877" expanded="true" signature="701:762" placeholder="SELECT COUNT... users" />
-            <marker date="1454927962877" expanded="true" signature="1492:1566" placeholder="INSERT INTO users... " />
-            <marker date="1454927962877" expanded="true" signature="2476:2545" placeholder="SELECT user_... users" />
-            <marker date="1454927962877" expanded="true" signature="3299:3359" placeholder="UPDATE users... " />
-            <marker date="1454927962877" expanded="true" signature="4197:4247" placeholder="SELECT user_... users" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -587,13 +495,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
-          <folding>
-            <marker date="1454927962877" expanded="true" signature="701:762" placeholder="SELECT COUNT... users" />
-            <marker date="1454927962877" expanded="true" signature="1492:1566" placeholder="INSERT INTO users... " />
-            <marker date="1454927962877" expanded="true" signature="2476:2545" placeholder="SELECT user_... users" />
-            <marker date="1454927962877" expanded="true" signature="3299:3359" placeholder="UPDATE users... " />
-            <marker date="1454927962877" expanded="true" signature="4197:4247" placeholder="SELECT user_... users" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -608,9 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1454927659516" expanded="true" signature="181:231" placeholder="SELECT user_... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -618,12 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454926795272" expanded="true" signature="7650:7682" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="7945:7977" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8217:8249" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8466:8498" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -632,9 +525,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding>
-            <marker date="1454944704850" expanded="true" signature="2674:2707" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="2927:2960" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="3245:3297" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3318:3351" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3611:3644" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3906:3939" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -643,13 +536,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding>
-            <marker date="1454927962877" expanded="true" signature="701:762" placeholder="SELECT COUNT... users" />
-            <marker date="1454927962877" expanded="true" signature="1492:1566" placeholder="INSERT INTO users... " />
-            <marker date="1454927962877" expanded="true" signature="2476:2545" placeholder="SELECT user_... users" />
-            <marker date="1454927962877" expanded="true" signature="3299:3359" placeholder="UPDATE users... " />
-            <marker date="1454927962877" expanded="true" signature="4197:4247" placeholder="SELECT user_... users" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -664,9 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1454927659516" expanded="true" signature="181:231" placeholder="SELECT user_... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -674,12 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454926795272" expanded="true" signature="7650:7682" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="7945:7977" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8217:8249" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8466:8498" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,9 +566,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding>
-            <marker date="1454944704850" expanded="true" signature="2674:2707" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="2927:2960" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="3245:3297" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3318:3351" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3611:3644" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3906:3939" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -699,13 +577,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454927962877" expanded="true" signature="701:762" placeholder="SELECT COUNT... users" />
-            <marker date="1454927962877" expanded="true" signature="1492:1566" placeholder="INSERT INTO users... " />
-            <marker date="1454927962877" expanded="true" signature="2476:2545" placeholder="SELECT user_... users" />
-            <marker date="1454927962877" expanded="true" signature="3299:3359" placeholder="UPDATE users... " />
-            <marker date="1454927962877" expanded="true" signature="4197:4247" placeholder="SELECT user_... users" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -720,9 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1454927659516" expanded="true" signature="181:231" placeholder="SELECT user_... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -730,12 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding>
-            <marker date="1454926795272" expanded="true" signature="7650:7682" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="7945:7977" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8217:8249" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8466:8498" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,9 +607,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
           <folding>
-            <marker date="1454944704850" expanded="true" signature="2674:2707" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="2927:2960" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="3245:3297" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3318:3351" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3611:3644" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3906:3939" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -755,13 +618,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454927962877" expanded="true" signature="701:762" placeholder="SELECT COUNT... users" />
-            <marker date="1454927962877" expanded="true" signature="1492:1566" placeholder="INSERT INTO users... " />
-            <marker date="1454927962877" expanded="true" signature="2476:2545" placeholder="SELECT user_... users" />
-            <marker date="1454927962877" expanded="true" signature="3299:3359" placeholder="UPDATE users... " />
-            <marker date="1454927962877" expanded="true" signature="4197:4247" placeholder="SELECT user_... users" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -769,12 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="50" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454926795272" expanded="true" signature="7650:7682" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="7945:7977" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8217:8249" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8466:8498" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -783,9 +634,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1454944704850" expanded="true" signature="2674:2707" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="2927:2960" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="3245:3297" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3318:3351" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3611:3644" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3906:3939" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -794,13 +645,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454927962877" expanded="true" signature="701:762" placeholder="SELECT COUNT... users" />
-            <marker date="1454927962877" expanded="true" signature="1492:1566" placeholder="INSERT INTO users... " />
-            <marker date="1454927962877" expanded="true" signature="2476:2545" placeholder="SELECT user_... users" />
-            <marker date="1454927962877" expanded="true" signature="3299:3359" placeholder="UPDATE users... " />
-            <marker date="1454927962877" expanded="true" signature="4197:4247" placeholder="SELECT user_... users" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -808,12 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="108" column="59" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454926795272" expanded="true" signature="7650:7682" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="7945:7977" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8217:8249" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8466:8498" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,9 +661,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1454944704850" expanded="true" signature="2674:2707" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="2927:2960" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="3245:3297" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3318:3351" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3611:3644" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3906:3939" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -833,13 +672,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454927962877" expanded="true" signature="701:762" placeholder="SELECT COUNT... users" />
-            <marker date="1454927962877" expanded="true" signature="1492:1566" placeholder="INSERT INTO users... " />
-            <marker date="1454927962877" expanded="true" signature="2476:2545" placeholder="SELECT user_... users" />
-            <marker date="1454927962877" expanded="true" signature="3299:3359" placeholder="UPDATE users... " />
-            <marker date="1454927962877" expanded="true" signature="4197:4247" placeholder="SELECT user_... users" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -847,12 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1454926795272" expanded="true" signature="7650:7682" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="7945:7977" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8217:8249" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8466:8498" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -861,9 +688,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1454944704850" expanded="true" signature="2674:2707" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="2927:2960" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="3245:3297" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3318:3351" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3611:3644" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3906:3939" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -924,58 +751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="26" />
-          <folding>
-            <marker date="1454927962877" expanded="true" signature="701:762" placeholder="SELECT COUNT... users" />
-            <marker date="1454927962877" expanded="true" signature="1492:1566" placeholder="INSERT INTO users... " />
-            <marker date="1454927962877" expanded="true" signature="2476:2545" placeholder="SELECT user_... users" />
-            <marker date="1454927962877" expanded="true" signature="3299:3359" placeholder="UPDATE users... " />
-            <marker date="1454927962877" expanded="true" signature="4197:4247" placeholder="SELECT user_... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_users/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
-          <folding>
-            <marker date="1454945173268" expanded="true" signature="265:317" placeholder="SELECT user_... users" />
-            <marker date="1454945173268" expanded="true" signature="265:319" placeholder="SELECT user_... users" />
-            <marker date="1454945173268" expanded="true" signature="885:892" placeholder="SELECT from users... " />
-            <marker date="1454945173268" expanded="true" signature="885:931" placeholder="SELECT user_... users" />
-            <marker date="1454945173268" expanded="true" signature="885:937" placeholder="SELECT user_... users" />
-            <marker date="1454945173268" expanded="true" signature="885:939" placeholder="SELECT user_... users" />
-            <marker date="1454945173268" expanded="true" signature="1497:1554" placeholder="UPDATE users... " />
-            <marker date="1454945173268" expanded="true" signature="2148:2180" placeholder="UPDATE users... " />
-            <marker date="1454945173268" expanded="true" signature="2148:2204" placeholder="UPDATE users... " />
-            <marker date="1454945173268" expanded="true" signature="2148:2211" placeholder="UPDATE users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_users/admin_users.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42090786">
-          <caret line="68" column="72" selection-start-line="68" selection-start-column="72" selection-end-line="68" selection-end-column="72" />
-          <folding>
-            <marker date="1454944704850" expanded="true" signature="2674:2707" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="2927:2960" placeholder="..." />
-            <marker date="1454944704850" expanded="true" signature="3245:3297" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding>
-            <marker date="1454927513163" expanded="true" signature="268:319" placeholder="UPDATE users... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -983,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="176" selection-start-line="28" selection-start-column="176" selection-end-line="28" selection-end-column="176" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,21 +769,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding>
-            <marker date="1454927659516" expanded="true" signature="181:231" placeholder="SELECT user_... users" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/registration_page.html.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.666666">
+          <caret line="89" column="7" selection-start-line="89" selection-start-column="7" selection-end-line="91" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="49" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
+          <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_users/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.666667">
+          <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
           <folding>
-            <marker date="1454926795272" expanded="true" signature="7650:7682" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="7945:7977" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8217:8249" placeholder="..." />
-            <marker date="1454926795272" expanded="true" signature="8466:8498" placeholder="..." />
+            <marker date="1455113847669" expanded="true" signature="265:317" placeholder="SELECT user_... users" />
+            <marker date="1455113847669" expanded="true" signature="885:937" placeholder="SELECT user_... users" />
+            <marker date="1455113847669" expanded="true" signature="1497:1554" placeholder="UPDATE users... " />
+            <marker date="1455113847669" expanded="true" signature="2313:2376" placeholder="UPDATE users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_users/admin_users.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82377625">
+          <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+          <folding>
+            <marker date="1455116008743" expanded="true" signature="3318:3351" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3611:3644" placeholder="..." />
+            <marker date="1455116008743" expanded="true" signature="3906:3939" placeholder="..." />
           </folding>
         </state>
       </provider>

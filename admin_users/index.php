@@ -56,6 +56,11 @@ if (isset($_POST['login'])) {
                 echo $err;
                 exit();
             }
+
+            $change_login = 'Логин успешно изменен!';
+
+            //обновить страницу после апдейта таблицы
+            Header('Location: '.$_SERVER['PHP_SELF']);
         }
     }
 
@@ -79,6 +84,8 @@ if (isset($_POST['password'])) {
 
     $pchange = 'Пароль успешно изменен';
 
+    //обновить страницу после апдейта таблицы
+    Header('Location: '.$_SERVER['PHP_SELF']);
 }
 
 include $_SERVER["DOCUMENT_ROOT"] . "/smp/" . "/admin_users/" . "admin_users.html.php";
