@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specialized medical services</title>
+    <title>Administration</title>
     <meta name="description" content="Blueprint: Vertical Icon Menu" />
     <meta name="keywords" content="Vertical Icon Menu, vertical menu, icons, menu, css" />
     <meta name="author" content="Codrops" />
@@ -92,6 +92,11 @@
             uk-animation-slide-top">' . $log_error . '</div>' . '<br/>';
                     } ?>
 
+                    <?php if (isset($session)) {
+                        echo '<div id="message" style="margin-top: 2%; margin-left: 40%;" class="uk-alert-danger uk-text-center uk-width-1-5
+            uk-animation-slide-top">' . $session . '</div>' . '<br/>';
+                    } ?>
+
 
                     <table class="uk-table uk-table-hover uk-table-striped">
                         <thead>
@@ -150,6 +155,39 @@
 
                 <li>
                     <h3>Active users list</h3>
+
+                    <table class="uk-table uk-table-hover uk-table-striped">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Login</th>
+                            <th>Password</th>
+                            <th>Shutdown</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <td>ID</td>
+                            <td>Login</td>
+                            <td>Password</td>
+                            <td>Shutdown</td>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+                        <?php foreach ($actUsers as $onlineUser): ?>
+                            <form method="POST">
+                                <tr>
+                                    <td><?php echo $onlineUser['actId'] ?></td>
+                                    <td><?php echo $onlineUser['actLogin']?></td>
+                                    <td><?php echo $onlineUser['actPassword']?><br/><br/></td>
+                                    <input type="hidden" id="user_id" name="user_id" value="<?php echo $onlineUser['actId']; ?>">
+                                    <td><button type="submit" name="killSession" class="uk-button uk-button-primary uk-button-small"><i class="uk-icon-sign-out"> Kill session</i></button></td>
+                                </tr>
+                            </form>
+                        <?php endforeach; ?>
+                        </tbody>
+                    </table>
+
                 </li>
                 <li>еще не придумал</li>
             </ul>

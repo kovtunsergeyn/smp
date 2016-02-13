@@ -3,7 +3,7 @@
 //подключаемся к бд
 include_once $_SERVER["DOCUMENT_ROOT"] . "/smp/" . 'dbconnect.php';
 include_once $_SERVER["DOCUMENT_ROOT"] . "/smp/" . 'exit.php';
-
+include_once $_SERVER["DOCUMENT_ROOT"] . "/smp/" . "includes/" . 'endOfSession.php';
 
 //проверяем роль пользователя
 
@@ -34,6 +34,19 @@ if ($result[0] == 'admin') {
 
     foreach ($result as $row) {
         $users[] = array('login'=>$row['user_login'], 'password'=>$row['user_password'], 'id'=>$row['user_id']);
+    }
+
+    //список активных пользователей
+    try {
+        $activeUsers = $pdo->query('SELECT user_login, user_password, user_id from users WHERE user_hash!=0');
+    }catch (PDOException $error) {
+        $err = 'Не удалось выгрузить список актиынх пользователей';
+        echo $err . $error->getMessage();
+        exit();
+    }
+
+    foreach ($activeUsers as $row1) {
+        $actUsers[] = array('actLogin'=>$row1['user_login'], 'actPassword'=>$row1['user_password'], 'actId'=>$row1['user_id']);
     }
 } else {
     echo 'Извените, но у вас нет доступа! ';
@@ -155,6 +168,22 @@ if (isset($_POST['delete-user'])) {
 
     //обновить страницу после апдейта таблицы
     Header('Location: '.$_SERVER['PHP_SELF']);
+}
+
+//сбросить сессию пользователя
+if (isset($_POST['killSession'])) {
+    try {
+        $SQL = 'UPDATE users SET user_hash=0 WHERE user_id=:user_id';
+        $s = $pdo->prepare($SQL);
+        $s->bindValue(':user_id', $_POST['user_id']);
+        $s->execute();
+    } catch (PDOException $error) {
+        $error = 'Не удалось сбросить сессию' . $error->getMessage();
+        exit();
+    }
+
+    $session = 'Сессия сброшена!';
+    endOfSession();
 }
 
 //выход
