@@ -75,7 +75,7 @@
             <!--контейнер-->
             <ul id="my-id" class="uk-switcher uk-margin">
                 <li>
-                    <h3>List of registered users</h3>
+                    <h3>Registered users list</h3>
 
                     <?php if (isset($pchange)) {
                         echo '<div id="message" style="margin-top: 2%; margin-left: 40%;" class="uk-alert-success uk-text-center uk-width-1-5
@@ -94,38 +94,37 @@
 
 
                     <table class="uk-table uk-table-hover uk-table-striped">
-                        <caption>Список пользователей</caption>
                         <thead>
                         <tr>
-                            <th>Логин</th>
-                            <th>Пароль</th>
                             <th>ID</th>
-                            <th>Изменить</th>
+                            <th>Login</th>
+                            <th>Password</th>
+                            <th>Change</th>
                         </tr>
                         </thead>
                         <tfoot>
                         <tr>
-                            <td>Логин</td>
-                            <td>Пароль</td>
                             <td>ID</td>
-                            <td>Изменить</td>
+                            <td>Login</td>
+                            <td>Password</td>
+                            <td>Change</td>
                         </tr>
                         </tfoot>
                         <tbody>
                         <?php foreach ($users as $user): ?>
                             <tr>
+                                <td><?php echo $user['id'] ?></td>
                                 <td><?php echo $user['login']?></td>
-                                <td><?php echo $user['password']?></td>
-                                <td><?php echo $user['id'] ?><br/><br/></td>
-                                <td><input type="button" class="uk-button uk-button-small uk-button-success" value="Изменить" data-uk-modal="{target:'#<?php echo $user['id'] ?>'}"></td>
+                                <td><?php echo $user['password']?><br/><br/></td>
+                                <td><button type="button" class="uk-button uk-button-primary uk-button-small" data-uk-modal="{target:'#<?php echo $user['id'] ?>'}"><i class="uk-icon-gear"> Change</i></button></td>
 
                                 <div class="uk-modal" id="<?php echo $user['id'] ?>">
                                     <div class="uk-modal-dialog">
-                                        <div class="uk-modal-header">Изменить информацию о пользователе</div>
+                                        <div class="uk-modal-header"><a href="" class="uk-icon-justify uk-icon-cogs"></a> Change user info</div>
                                         <form action="index.php" method="POST">
-                                            <i>Login:</i> <?php echo $user['login']?>
-                                            <i>Password:</i> <?php echo $user['password']?>
-                                            <i>ID:</i> <?php echo $user['id'] ?><br/><br/>
+                                            <b>Login: <?php echo $user['login']?></b>
+                                            <b>Password: <?php echo $user['password']?></b>
+                                            <b>ID: <?php echo $user['id'] ?><br/><br/></b>
 
                                             <input type="hidden" id="user_id" name="user_id" value="<?php echo $user['id']; ?>">
 
@@ -135,8 +134,10 @@
                                             <input type="text" placeholder="Change password" id="password_change" name="password_change">&nbsp
                                             <button type="submit" name="password" id="password" class="uk-button uk-button-primary uk-width-1-4">Change password</button><br/><br/>
 
-                                            <button type="submit" name="admin_role" class="uk-button uk-button-primary uk-width-1-5">Admin role</button>&nbsp
-                                            <button type="submit" name="user_role" class="uk-button uk-button-primary uk-width-1-5">User role</button><br/>
+                                            <button type="submit" name="admin_role" class="uk-button uk-button-danger uk-width-1-4"><i class="uk-icon-user-secret"> Admin role</i></button>&nbsp
+                                            <button type="submit" name="user_role" class="uk-button uk-button-danger uk-width-1-4"><i class="uk-icon-user"> User role</i></button>
+
+                                            <button type="submit" name="delete-user" class="uk-button uk-button-primary uk-align-right"><i class="uk-icon-trash"> Delete</i></button>
                                         </form>
                                     </div>
                                 </div>
@@ -147,7 +148,9 @@
                     </table>
                 </li>
 
-                <li>список авторизованных пользователей, с возможностью сбросить авторизацию и их общее количество</li>
+                <li>
+                    <h3>Active users list</h3>
+                </li>
                 <li>еще не придумал</li>
             </ul>
         </div>

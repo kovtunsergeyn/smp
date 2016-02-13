@@ -60,7 +60,7 @@
 
         <div class="main">
             <h2>Search</h2>
-            <input type="button" name="patientAdd" id="patientAdd" class="uk-button uk-button-primary uk-align-medium-right" value="Create a patient"/>
+            <button type="submit" name="create_patien" class="uk-button uk-button-primary uk-button-small uk-align-right"><i class="uk-icon-plus-square"> Add patient</i></button>
         </div>
 
     </div>

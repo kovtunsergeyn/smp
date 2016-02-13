@@ -105,7 +105,57 @@ if (isset($_POST['password'])) {
     Header('Location: '.$_SERVER['PHP_SELF']);
 }
 
+//дать роль администратора
+if (isset($_POST['admin_role'])) {
 
+    try {
+        $SQL = 'UPDATE users SET role="admin" WHERE user_id=:id';
+        $s = $pdo->prepare($SQL);
+        $s->bindValue(':id', $_POST['user_id']);
+        $s->execute();
+    }catch (PDOException $error) {
+        $err = 'Не удалось присвоить роль администратора!';
+        echo $err . $error->getMessage();
+        exit();
+    }
+
+    //обновить страницу после апдейта таблицы
+    Header('Location: '.$_SERVER['PHP_SELF']);
+}
+
+//дать роль пользователя МО
+if (isset($_POST['user_role'])) {
+    try {
+        $SQL = 'UPDATE users SET role="user_mo" WHERE user_id=:id';
+        $s = $pdo->prepare($SQL);
+        $s->bindValue(':id', $_POST['user_id']);
+        $s->execute();
+    }catch (PDOException $error) {
+        $err = 'Не удалось присвоить роль пользователя мо!';
+        echo $err . $error->getMessage();
+        exit();
+    }
+
+    //обновить страницу после апдейта таблицы
+    Header('Location: '.$_SERVER['PHP_SELF']);
+}
+
+//удалить пользователя
+if (isset($_POST['delete-user'])) {
+    try {
+        $SQL = 'DELETE FROM users WHERE user_id=:id';
+        $s = $pdo->prepare($SQL);
+        $s->bindValue(':id', $_POST['user_id']);
+        $s->execute();
+    }catch (PDOException $error) {
+        $err = 'Не удалось удалить пользователя!';
+        echo $err . $error->getMessage();
+        exit();
+    }
+
+    //обновить страницу после апдейта таблицы
+    Header('Location: '.$_SERVER['PHP_SELF']);
+}
 
 //выход
 if (isset($_POST['exit'])) {
