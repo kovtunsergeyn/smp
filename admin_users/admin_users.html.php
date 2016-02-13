@@ -93,29 +93,64 @@
                     } ?>
 
 
-                    <?php foreach ($users as $user): ?>
-                        <form action="index.php" method="POST" class="uk-form uk-panel-box uk-panel">
-                            <i>Login:</i> <?php echo $user['login']?>
-                            <i>Password:</i> <?php echo $user['password']?>
-                            <i>ID:</i> <?php echo $user['id'] ?><br/><br/>
+                    <table class="uk-table uk-table-hover uk-table-striped">
+                        <caption>Список пользователей</caption>
+                        <thead>
+                        <tr>
+                            <th>Логин</th>
+                            <th>Пароль</th>
+                            <th>ID</th>
+                            <th>Изменить</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <td>Логин</td>
+                            <td>Пароль</td>
+                            <td>ID</td>
+                            <td>Изменить</td>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+                        <?php foreach ($users as $user): ?>
+                            <tr>
+                                <td><?php echo $user['login']?></td>
+                                <td><?php echo $user['password']?></td>
+                                <td><?php echo $user['id'] ?><br/><br/></td>
+                                <td><input type="button" class="uk-button uk-button-small uk-button-success" value="Изменить" data-uk-modal="{target:'#<?php echo $user['id'] ?>'}"></td>
 
-                            <input type="hidden" id="user_id" name="user_id" value="<?php echo $user['id']; ?>">
+                                <div class="uk-modal" id="<?php echo $user['id'] ?>">
+                                    <div class="uk-modal-dialog">
+                                        <div class="uk-modal-header">Изменить информацию о пользователе</div>
+                                        <form action="index.php" method="POST">
+                                            <i>Login:</i> <?php echo $user['login']?>
+                                            <i>Password:</i> <?php echo $user['password']?>
+                                            <i>ID:</i> <?php echo $user['id'] ?><br/><br/>
 
-                            <input type="text" placeholder="Change login" id="login_change" name="login_change">
-                            <button type="submit" name="login" id="login" class="uk-button uk-button-primary uk-width-1-5">Change login</button><br/><br/>
+                                            <input type="hidden" id="user_id" name="user_id" value="<?php echo $user['id']; ?>">
 
-                            <input type="text" placeholder="Change password" id="password_change" name="password_change">
-                            <button type="submit" name="password" id="password" class="uk-button uk-button-primary uk-width-1-5">Change password</button><br/>
-                        </form><br/>
-                    <?php endforeach; ?>
+                                            <input type="text" placeholder="Change login" id="login_change" name="login_change">&nbsp
+                                            <button type="submit" name="login" id="login" class="uk-button uk-button-primary uk-width-1-4">Change login</button><br/><br/>
+
+                                            <input type="text" placeholder="Change password" id="password_change" name="password_change">&nbsp
+                                            <button type="submit" name="password" id="password" class="uk-button uk-button-primary uk-width-1-4">Change password</button><br/><br/>
+
+                                            <button type="submit" name="admin_role" class="uk-button uk-button-primary uk-width-1-5">Admin role</button>&nbsp
+                                            <button type="submit" name="user_role" class="uk-button uk-button-primary uk-width-1-5">User role</button><br/>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </tr>
+                        <?php endforeach; ?>
+                        </tbody>
+                    </table>
                 </li>
 
                 <li>список авторизованных пользователей, с возможностью сбросить авторизацию и их общее количество</li>
                 <li>еще не придумал</li>
             </ul>
-
         </div>
-
     </div>
 </body>
 </html>

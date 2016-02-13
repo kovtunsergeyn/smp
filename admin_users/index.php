@@ -4,9 +4,26 @@
 include_once $_SERVER["DOCUMENT_ROOT"] . "/smp/" . 'dbconnect.php';
 include_once $_SERVER["DOCUMENT_ROOT"] . "/smp/" . 'exit.php';
 
+
+//проверяем роль пользователя
+
+try {
+    $SQL = 'SELECT role FROM users WHERE user_id=:id';
+    $s = $pdo->prepare($SQL);
+    $s->bindValue(':id', $_COOKIE['id']);
+    $s->execute();
+} catch (PDOException $err) {
+    $error = 'Не удалось получить роль пользователя!' . $err->getMessage();
+    echo  $error;
+    exit();
+}
+
+$result = $s->fetch();
+//$result[0] - роль пользователя
+
 //выводим список имен пользователей
 
-if ($_COOKIE['id'] == 33) {
+if ($result[0] == 'admin') {
     try {
         $result = $pdo->query('SELECT user_login, user_password, user_id FROM users');
     } catch(PDOException $error) {

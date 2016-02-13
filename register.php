@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
         $password = md5(md5(trim($_POST['newPassword'])));
 
         try {
-            $SQL = 'INSERT INTO users SET user_login=:user_login, user_password=:user_password';
+            $SQL = 'INSERT INTO users SET user_login=:user_login, user_password=:user_password, role="user_mo"';
             $s = $pdo->prepare($SQL);
             $s->bindValue(':user_login', $login);
             $s->bindValue(':user_password', $password);
