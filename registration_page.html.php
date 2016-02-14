@@ -106,7 +106,7 @@
         </li>
     </ul>
     <div class="main">
-        <h2>Home registration</h2>
+        <h2>Home page</h2>
 
         <form class="uk-form uk-panel-box uk-panel uk-container-center" style="width: 350px; margin-top: 5%" method="POST">
 

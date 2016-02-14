@@ -172,16 +172,6 @@ if (isset($_POST['delete-user'])) {
 
 //сбросить сессию пользователя
 if (isset($_POST['killSession'])) {
-    try {
-        $SQL = 'UPDATE users SET user_hash=0 WHERE user_id=:user_id';
-        $s = $pdo->prepare($SQL);
-        $s->bindValue(':user_id', $_POST['user_id']);
-        $s->execute();
-    } catch (PDOException $error) {
-        $error = 'Не удалось сбросить сессию' . $error->getMessage();
-        exit();
-    }
-
     $session = 'Сессия сброшена!';
     endOfSession();
 }

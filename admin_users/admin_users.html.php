@@ -125,8 +125,8 @@
 
                                 <div class="uk-modal" id="<?php echo $user['id'] ?>">
                                     <div class="uk-modal-dialog">
-                                        <div class="uk-modal-header"><a href="" class="uk-icon-justify uk-icon-cogs"></a> Change user info</div>
-                                        <form action="index.php" method="POST">
+                                        <div class="uk-modal-header"><a href="#" class="uk-icon-justify uk-icon-cogs"></a> Change user info</div>
+                                        <form action="index.php" method="POST" class="uk-form">
                                             <b>Login: <?php echo $user['login']?></b>
                                             <b>Password: <?php echo $user['password']?></b>
                                             <b>ID: <?php echo $user['id'] ?><br/><br/></b>

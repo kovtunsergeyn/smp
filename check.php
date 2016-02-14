@@ -42,9 +42,12 @@ else {
     header('Location:register.php');
 }
 
-include "search_page.html.php";
+//добавление пациента
+
 
 //выход
 if (isset($_POST['exit'])) {
     theEnd();
 }
+
+include "search_page.html.php";
